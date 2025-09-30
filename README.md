@@ -1,15 +1,10 @@
-# uv-python-starter-template
+# strands-agents-hands-on
 
-A modern Python project template using uv package manager with development best practices.
+Hands-on project for building agents with Strands framework.
 
 ## Overview
 
-This is a starter template for Python projects that includes:
-- Modern dependency management with uv
-- Pre-configured development tools (ruff, pyright, pytest)
-- Pydantic settings for configuration management
-- Pre-commit hooks for code quality
-- Testing setup with pytest and coverage
+This project provides practical examples and exercises for learning how to build AI agents using the Strands framework.
 
 ## Usage
 
@@ -18,7 +13,7 @@ This is a starter template for Python projects that includes:
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd uv-python-starter-template
+cd strands-agents-hands-on
 
 # Install dependencies
 uv sync
@@ -46,7 +41,7 @@ uv run ruff format .
 ### Running the application
 
 ```bash
-uv run uv-python-starter-template
+uv run strands-agents-hands-on
 ```
 
 ## Project Structure
@@ -54,10 +49,7 @@ uv run uv-python-starter-template
 ```
 .
 ├── src/
-│   └── uv_python_starter_template/
-│       ├── __init__.py
-│       ├── calculator.py
-│       └── config.py
+│   └── strands_agents_hands_on/
 ├── tests/
 ├── pyproject.toml
 └── uv.lock
