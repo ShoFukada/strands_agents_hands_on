@@ -9,7 +9,10 @@ authors = [
 license = { file = "LICENSE" }
 requires-python = ">=3.12"
 dependencies = [
+    "boto3>=1.40.41",
     "pydantic-settings>=2.10.1",
+    "strands-agents-tools>=0.2.9",
+    "strands-agents[openai]>=1.10.0",
 ]
 
 [project.scripts]
@@ -53,6 +56,10 @@ ignore = [
     "TRY003", # Long exception messages allowed
     "EM101",  # Exception string literals allowed
     "COM812", # Trailing comma missing (conflicts with formatter)
+
+    # Type annotations
+    "ANN401", # Any type allowed for **kwargs
+    "ARG002", # Unused method arguments allowed (e.g., **kwargs in abstract method implementations)
 ]
 
 

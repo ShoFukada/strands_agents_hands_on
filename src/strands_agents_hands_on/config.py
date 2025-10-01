@@ -24,8 +24,11 @@ class Settings(BaseSettings):
     )
 
     OPENAI_API_KEY: str | None = None
+    AWS_ACCESS_KEY_ID: str | None = None
+    AWS_SECRET_ACCESS_KEY: str | None = None
+    AWS_REGION: str = "us-east-1"
 
-    def __init__(self, **data: Any) -> None:  # noqa: ANN401
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
         for field_name, field_value in self.model_dump().items():
             if field_value is not None:
