@@ -1,4 +1,5 @@
 """uv run python -m strands_agents_hands_on.examples.05_tools.simple_python_tool"""
+
 from strands import Agent, tool
 
 
