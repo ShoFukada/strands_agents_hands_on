@@ -36,6 +36,8 @@ uv run pyright
 
 # Format code
 uv run ruff format .
+
+uv run pre-commit install
 ```
 
 ### Running the application
